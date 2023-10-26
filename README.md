@@ -4,7 +4,7 @@ Bem-vindo ao repositório AuTo SMS VIVO 💚!
 
 ## Como Funciona
 
-Este repositório contém um exemplo de código para fazer solicitações à API da Vivo para envio de SMS. O código utiliza a biblioteca Axios para fazer as solicitações HTTP. Certifique-se de substituir as variáveis `apiKey` e `apiSecret` pelas suas credenciais da API.
+Este repositório contém um exemplo de código em JavaScript para fazer solicitações à API da Vivo para envio de SMS. O código utiliza a biblioteca Axios para fazer as solicitações HTTP. Certifique-se de substituir as variáveis `apiKey` e `apiSecret` pelas suas credenciais da API.
 
 ```javascript
 // Importe a biblioteca para fazer solicitações HTTP (por exemplo, 'axios')
