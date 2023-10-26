@@ -48,7 +48,7 @@ Lembre-se de que a disponibilidade da API e o processo de obtenção das credenc
 
 ### Créditos
 
-O código e o repositório foram criados por [seu nome] (Instagram: [link_do_seu_instagram]).
+O código e o repositório foram criados por [Willi Dionisio] (Instagram: [https://instagram.com/willizqy?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr]).
 
 ### Contribuições
 
