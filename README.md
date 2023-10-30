@@ -1,6 +1,6 @@
-# AuTo SMS VIVO 💚
+# 💚 • Virtual - SMS
 
-Bem-vindo ao repositório AuTo SMS VIVO 💚!
+Bem-vindo ao repositório 💚 • Virtual - SMS!
 
 ## Como Funciona
 
