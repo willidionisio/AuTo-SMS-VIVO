@@ -9,8 +9,8 @@ Este repositório contém um exemplo de código em JavaScript para fazer solicit
 ```javascript
 const axios = require('axios');
 
-const apiKey = 'SUA_CHAVE_DE_API';
-const apiSecret = 'SEU_SEGREDO_DE_API';
+const apiKey = 'adicione sua API aqui';
+const apiSecret = 'aqui o segredo da API';
 const apiUrl = 'https://api.vivo.com.br/sms';
 
 const authHeader = {
