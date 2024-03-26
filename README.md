@@ -1,16 +1,19 @@
+
+
+```markdown
 # 💚 • Virtual - SMS
 
 Bem-vindo ao repositório 💚 • Virtual - SMS!
 
 ## Como Funciona
 
-Este repositório contém um exemplo de código em JavaScript para fazer solicitações à API da Vivo para envio de SMS. O código utiliza a biblioteca Axios para fazer as solicitações HTTP. Certifique-se de substituir as variáveis `apiKey` e `apiSecret` pelas suas credenciais da API.
+Este repositório contém um exemplo de código em JavaScript para fazer solicitações à API da Vivo para envio de SMS. O código utiliza a biblioteca Axios para fazer as solicitações HTTP. O código foi atualizado para incluir o envio de uma notificação SMS com o código recebido da API, utilizando a função `sendSMSNotification()`. Certifique-se de substituir as variáveis `apiKey` e `apiSecret` pelas suas credenciais da API.
 
 ```javascript
 const axios = require('axios');
 
-const apiKey = 'adicione sua API aqui';
-const apiSecret = 'aqui o segredo da API';
+const apiKey = 'adicione_sua_API_aqui';
+const apiSecret = 'aqui_o_segredo_da_API';
 const apiUrl = 'https://api.vivo.com.br/sms';
 
 const authHeader = {
@@ -22,10 +25,24 @@ const requestOptions = {
 };
 
 axios.get(apiUrl, requestOptions)
-  .then(response => console.log('Resposta da API:', response.data))
-  .catch(error => console.error('Erro na solicitação:', error));
+  .then(response => {
+    const smsCode = response.data; 
+    console.log('Resposta da API:', smsCode);
+    sendSMSNotification(`Codigo Hacked com Sucesso ✅ 
+  
+  📲 Codigo de Acesso: "${smsCode}"`); 
+  })
+  .catch(error => {
+    console.error('Erro na solicitação:', error);
+  });
+
+function sendSMSNotification(message) {
+ 
+  console.log('Enviando mensagem SMS:', message);
+}
 
 ```
+
 ## Como Obter a API de SMS da Vivo
 
 Para obter acesso à API de SMS da Vivo, siga os passos abaixo:
@@ -47,3 +64,4 @@ O código e o repositório foram criados por [Willi Dionisio] (Instagram: [(http
 ### Contribuições
 
 Se você deseja contribuir para este projeto, sinta-se à vontade para abrir problemas ou enviar solicitações de pull. Estamos felizes em receber contribuições da comunidade!
+```
